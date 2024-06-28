@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { Wrapper, List} from "./ApiPokemon.styled";
+import CardComponent from "./card/CardComponent";
 
 export default function Pokemon() {
   const [pokemon, setPokemon] = useState([]);
@@ -22,18 +24,17 @@ export default function Pokemon() {
   return (
     <div>
       <ul>
-        {pokemon.map((items, pokemon) => {
+        <Wrapper>
+        {pokemon.map((items, indexPoke) => {
           console.log(pokemon);
-          return (
-            <li key={pokemon}>
-              {items.name}
-              <img
-                src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon + 1}.png`}
-                alt=""
-              />
-            </li>
+          return ( 
+
+            <List key={pokemon}>
+              <CardComponent pokemon={items.name} pokeindex={indexPoke}/>
+            </List>
           );
         })}
+        </Wrapper>
       </ul>
     </div>
   );
