@@ -21,5 +21,6 @@ object-fit: contain;
 
 export const Text = styled.p`
 font-size: small;
+font-family: sans-serif;
 z-index: 0;
 `
