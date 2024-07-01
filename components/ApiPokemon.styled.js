@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+// export const Wrapper = styled.section`
+// display: flex;
+// flex-wrap: wrap;
+// background-color: pink;
+// `
+
+// export const List = styled.li`
+// list-style-type: none;
+// `
+
 export const Wrapper = styled.section`
 display: flex;
 flex-wrap: wrap;
@@ -17,7 +27,7 @@ background-color: white;
 list-style-type: none;
 `
 
-export const Text = styled.p`
+export const Text = styled.h1`
 color: black;
 font-size: medium;
 `

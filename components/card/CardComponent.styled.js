@@ -4,7 +4,7 @@ export const Card = styled.div`
 height: 280x;
 width: 280px;
 gap: 10px;
-background-color: pink;
+background-color: grey;
 flex-direction: column;
 align-items: center;
 justify-content: center;

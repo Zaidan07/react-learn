@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Wrapper, List} from "./ApiPokemon.styled";
+import { List, Wrapper} from "./ApiPokemon.styled";
 import CardComponent from "./card/CardComponent";
 
 export default function Pokemon() {
@@ -36,6 +36,19 @@ export default function Pokemon() {
         })}
         </Wrapper>
       </ul>
+      {/* <ul>
+        <Wrapper>
+        {pokemon.map((items, indexPoke) => {
+          console.log(pokemon)
+          return (
+            <List key={indexPoke}>
+              {items.name}
+              <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${indexPoke + 1}.png`} alt="" />
+            </List>
+          )
+        })}
+        </Wrapper>
+      </ul> */}
     </div>
   );
 }

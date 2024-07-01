@@ -11,9 +11,10 @@ export default function UseComponent () {
         }
     }
 
+    
     useEffect(() => {
         getData();
-    },[])
-
+    }, [])
+    
     return <div></div>
 }
